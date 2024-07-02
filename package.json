@@ -1,0 +1,52 @@
+{
+  "name": "@virto-commerce/front-modules-google-ecommerce-analytics",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/VirtoCommerce/vc-module-front-google-ecommerce-analytics"
+  },
+  "author": {
+    "email": "info@virtocommerce.com",
+    "name": "Virto Commerce",
+    "url": "https://virtocommerce.com"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "type": "module",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "vue": "^3.4.31"
+  },
+  "engines": {
+    "node": ">=20.11.0 <21.0.0"
+  },
+  "scripts": {
+    "validate:types": "tsc --noEmit",
+    "lint": "eslint .",
+    "prettier": "prettier --check \"**/*.{js,ts,md}\""
+  },
+  "devDependencies": {
+    "@types/gtag.js": "^0.0.20",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "eslint": "^8.57.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "front-modules-types": "^1.0.3",
+    "prettier": "^3.3.2",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "VirtoCommerce",
+    "Google",
+    "Analytics",
+    "Ecommerce",
+    "Frontend",
+    "Module"
+  ],
+  "files": [
+    "index.ts",
+    "README.md",
+    "LICENSE.txt"
+  ]
+}

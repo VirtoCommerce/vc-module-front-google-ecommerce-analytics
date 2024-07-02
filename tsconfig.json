@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": ["./**/*"],
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["ES2015", "DOM"],
+    "types": ["@types/gtag.js", "front-modules-types"]
+  },
+  "exclude": ["node_modules"]
+}
