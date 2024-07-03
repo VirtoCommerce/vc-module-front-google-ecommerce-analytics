@@ -1,6 +1,6 @@
 {
   "name": "@virto-commerce/front-modules-google-ecommerce-analytics",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.ts",
   "repository": {
     "type": "git",
@@ -28,14 +28,14 @@
   "devDependencies": {
     "@babel/types": "^7.24.7",
     "@graphql-typed-document-node/core": "^3.2.0",
-    "graphql": "^16.9.0",
     "@types/gtag.js": "^0.0.20",
     "@typescript-eslint/eslint-plugin": "^7.13.0",
     "@typescript-eslint/parser": "^7.13.0",
     "eslint": "^8.57.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
-    "front-modules-types": "^1.0.3",
+    "front-modules-types": "^1.0.4",
+    "graphql": "^16.9.0",
     "prettier": "^3.3.2",
     "typescript": "^5.4.5"
   },

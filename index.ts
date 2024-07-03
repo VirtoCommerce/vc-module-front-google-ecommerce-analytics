@@ -8,6 +8,7 @@ import type {
   Product,
   VariationType,
 } from "api/graphql/types";
+import type { ICurrency } from "types/currency";
 import type { LoggerType } from "utilities/logger/logger.type";
 import type { ComputedRef } from "vue";
 
@@ -17,15 +18,6 @@ import type { ComputedRef } from "vue";
 type CustomEventNamesType = "place_order" | "clear_cart";
 type EventParamsType = Gtag.ControlParams & Gtag.EventParams & Gtag.CustomParams;
 type EventParamsExtendedType = EventParamsType & { item_list_id?: string; item_list_name?: string };
-interface ICurrency {
-  code: string;
-  symbol: string;
-  cultureName: string;
-  englishName: string;
-  exchangeRate: unknown;
-  customFormatting?: string;
-  currencyCode: string;
-}
 
 const DEBUG_PREFIX = "[GA]";
 
