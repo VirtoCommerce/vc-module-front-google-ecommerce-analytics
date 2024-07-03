@@ -1,4 +1,4 @@
-import { sumBy } from "lodash/sumBy";
+import { sumBy } from "lodash";
 import type {
   Breadcrumb,
   CartType,
