@@ -9,7 +9,7 @@ import type {
   VariationType,
 } from "api/graphql/types";
 import type { LoggerType } from "utilities/logger/logger.type";
-import type { Ref } from "vue";
+import type { ComputedRef } from "vue";
 
 /**
  * Custom events. The items array can not be added
@@ -39,7 +39,7 @@ type DependenciesType = {
   getModuleSettings: <T extends Record<string, string>>(settingsMapping: T) => { [K in T[keyof T]]?: SettingValueType };
   logger: LoggerType;
   useScriptTag: (src: string) => void;
-  currentCurrency: Ref<ICurrency>;
+  currentCurrency: ComputedRef<ICurrency>;
   currencyCode: string;
 };
 
@@ -331,7 +331,7 @@ function search(searchTerm: string, visibleItems: { code: string }[] = [], items
   });
 }
 
-export function useHotjarModule() {
+export function useGoogleAnalyticsModule() {
   return {
     sendEvent,
     viewItemList,
