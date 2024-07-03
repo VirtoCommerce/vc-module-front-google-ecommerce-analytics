@@ -10,7 +10,7 @@ import type {
 } from "api/graphql/types";
 import type { ICurrency } from "types/currency";
 import type { LoggerType } from "utilities/logger/logger.type";
-import type { ComputedRef } from "vue";
+import type { Ref } from "vue";
 
 /**
  * Custom events. The items array can not be added
@@ -31,7 +31,7 @@ type DependenciesType = {
   getModuleSettings: <T extends Record<string, string>>(settingsMapping: T) => { [K in T[keyof T]]?: SettingValueType };
   logger: LoggerType;
   useScriptTag: (src: string) => void;
-  currentCurrency: ComputedRef<ICurrency>;
+  currentCurrency: Ref<ICurrency>;
   currencyCode: string;
 };
 

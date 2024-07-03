@@ -1,6 +1,6 @@
 {
   "name": "@virto-commerce/front-modules-google-ecommerce-analytics",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.ts",
   "repository": {
     "type": "git",
