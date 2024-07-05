@@ -9,7 +9,7 @@ import type {
   VariationType,
   ICurrency,
   LoggerType,
-} from "front-modules-types";
+} from "@virto-commerce/front-modules-shared-types";
 import type { Ref } from "vue";
 
 /**
