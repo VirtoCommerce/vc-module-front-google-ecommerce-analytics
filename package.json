@@ -1,6 +1,6 @@
 {
   "name": "@virto-commerce/front-modules-google-ecommerce-analytics",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "main": "index.ts",
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
   "license": "SEE LICENSE IN LICENSE.txt",
   "type": "module",
   "dependencies": {
+    "front-modules-types": "^1.0.4",
     "lodash": "^4.17.21",
     "vue": "^3.4.31"
   },
@@ -35,7 +36,6 @@
     "eslint": "^8.57.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
-    "front-modules-types": "^1.0.4",
     "graphql": "^16.9.0",
     "prettier": "^3.3.2",
     "typescript": "^5.4.5"
