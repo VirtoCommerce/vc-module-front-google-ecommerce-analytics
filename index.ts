@@ -7,9 +7,9 @@ import type {
   OrderLineItemType,
   Product,
   VariationType,
-} from "api/graphql/types";
-import type { ICurrency } from "types/currency";
-import type { LoggerType } from "utilities/logger/logger.type";
+  ICurrency,
+  LoggerType,
+} from "front-modules-types";
 import type { Ref } from "vue";
 
 /**
@@ -37,7 +37,12 @@ type DependenciesType = {
 
 let currencyCode: string;
 let canUseDOM = false;
-let logger: LoggerType = {} as LoggerType;
+let logger: LoggerType = {
+  debug() {},
+  error() {},
+  info() {},
+  warn() {},
+};
 
 function initModule({
   getModuleSettings,
@@ -88,7 +93,8 @@ function getCategories(breadcrumbs: Breadcrumb[] = []): Record<string, string> {
 }
 
 function productToGtagItem(item: Product | VariationType, index?: number): Gtag.Item {
-  const categories: Record<string, string> = "breadcrumbs" in item ? getCategories(item.breadcrumbs) : {};
+  const categories: Record<string, string> =
+    "breadcrumbs" in item ? getCategories(item.breadcrumbs as Breadcrumb[]) : {};
 
   return {
     index,
