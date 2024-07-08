@@ -18,15 +18,15 @@ or install a specific version
 
 Import the `useGoogleAnalyticsModule` composable in your Vue component:
 
-`ts
+```ts
 import { useGoogleAnalyticsModule } from "@virto-commerce/front-modules-google-ecommerce-analytics";
-`
+```
 
 But preferably use async import
 
-`ts
+```ts
 const { useGoogleAnalyticsModule } = await import("@virto-commerce/front-modules-google-ecommerce-analytics");
-`
+```
 
 ### Initialize Google Analytics
 
@@ -100,6 +100,10 @@ void initializeGoogleAnalytics();
 ### Track Events
 
 You can find all provided methods in the [source code](https://github.com/VirtoCommerce/vc-module-front-google-ecommerce-analytics/blob/main/index.ts)
+
+## Publishing the Package
+
+To publish the package, draft a new release. Ensure that that the version in `package.json` was changed accordingly in advance. After release package will be published automatically. On any concerns please see workflows in the **Actions** tab.
 
 ## Links
 

@@ -209,10 +209,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@virto-commerce/front-modules-shared-types@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@virto-commerce/front-modules-shared-types/-/front-modules-shared-types-1.0.1.tgz#08a8a379718eb711d144fbdce4a7c52d1bdedae6"
-  integrity sha512-j6bZo5C3v9Pw57PLrvOCBYJ9z713xjO0xo5DmqJZ5TFelax8nZ3u3OQjQm4hfPXVzihqcvlw9VcZDqq9PosKRQ==
+"@virto-commerce/front-modules-shared-types@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@virto-commerce/front-modules-shared-types/-/front-modules-shared-types-1.0.4.tgz#4c8f02a697cf795f56f7edadbcc063bb96669244"
+  integrity sha512-Fx+CeaCA26GMtKOkIHMTGy1uRIa3chVLdxBBReLsQywKRu6fRxR5no7umBI63obI+7lePJfgEppuLA0CK55gsA==
 
 "@vue/compiler-core@3.4.31":
   version "3.4.31"
