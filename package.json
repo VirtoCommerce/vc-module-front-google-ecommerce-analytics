@@ -1,6 +1,6 @@
 {
   "name": "@virto-commerce/front-modules-google-ecommerce-analytics",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.ts",
   "repository": {
     "type": "git",
@@ -23,7 +23,8 @@
   "scripts": {
     "validate:types": "tsc --noEmit",
     "lint": "eslint .",
-    "prettier": "prettier --check \"**/*.{js,ts,md}\""
+    "prettier": "prettier --check \"**/*.{js,ts,md}\"",
+    "build": "rm -rf dist && tsc"
   },
   "devDependencies": {
     "@babel/types": "^7.24.7",
@@ -48,7 +49,7 @@
     "Module"
   ],
   "files": [
-    "index.ts",
+    "dist",
     "README.md",
     "LICENSE.txt"
   ]
