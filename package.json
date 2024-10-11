@@ -1,6 +1,6 @@
 {
   "name": "@virto-commerce/front-modules-google-ecommerce-analytics",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -16,6 +16,7 @@
   "type": "module",
   "dependencies": {
     "lodash": "^4.17.21",
+    "micromatch": "^4.0.8",
     "vue": "^3.4.31"
   },
   "engines": {
