@@ -10,7 +10,7 @@ import type {
   ICurrency,
   LoggerType,
 } from "./types";
-import type { Ref } from "vue";
+import type { ComputedRef } from "vue";
 
 /**
  * Custom events. The items array can not be added
@@ -31,7 +31,7 @@ type DependenciesType = {
   getModuleSettings: <T extends Record<string, string>>(settingsMapping: T) => { [K in T[keyof T]]?: SettingValueType };
   logger: LoggerType;
   useScriptTag: (src: string) => void;
-  currentCurrency: Ref<ICurrency>;
+  currentCurrency: ComputedRef<ICurrency>;
   currencyCode: string;
 };
 
