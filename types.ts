@@ -220,11 +220,6 @@ export type CartType = {
   isAnonymous: Scalars["Boolean"]["output"];
   /** Displays whether the shopping cart is recurring */
   isRecuring?: Maybe<Scalars["Boolean"]["output"]>;
-  /**
-   * Shows whether the cart is valid
-   * @deprecated Deprecated, because of useless (no need to know validation state without details). Use validationErrors field.
-   */
-  isValid: Scalars["Boolean"]["output"];
   /** Items */
   items: Array<LineItemType>;
   /** Item count */
