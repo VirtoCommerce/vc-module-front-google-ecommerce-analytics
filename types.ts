@@ -1570,5 +1570,3 @@ export interface ICurrency {
   exchangeRate: unknown;
   customFormatting?: string;
 }
-
-export type PromotionsType = { promotions?: { promotion_id: string; promotion_name: string }[] };
