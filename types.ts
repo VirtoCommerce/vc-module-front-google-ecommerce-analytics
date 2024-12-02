@@ -506,6 +506,8 @@ export type DiscountType = {
   moneyAmountWithTax: MoneyType;
   /** Value of promotion id */
   promotionId?: Maybe<Scalars["String"]["output"]>;
+  /** Name of the promotion */
+  promotionName?: Maybe<Scalars["String"]["output"]>;
 };
 export type DynamicPropertyType = {
   dictionaryItems?: Maybe<DictionaryItemConnection>;
@@ -790,6 +792,7 @@ export type OrderDiscountType = {
   coupon?: Maybe<Scalars["String"]["output"]>;
   description?: Maybe<Scalars["String"]["output"]>;
   promotionId?: Maybe<Scalars["String"]["output"]>;
+  promotionName?: Maybe<Scalars["String"]["output"]>;
 };
 export type OrderLineItemType = {
   cancelReason?: Maybe<Scalars["String"]["output"]>;
@@ -1568,4 +1571,4 @@ export interface ICurrency {
   customFormatting?: string;
 }
 
-export {};
+export type PromotionsType = { promotions?: { promotion_id: string; promotion_name: string }[] };

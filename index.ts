@@ -9,6 +9,9 @@ import type {
   VariationType,
   ICurrency,
   LoggerType,
+  PromotionsType,
+  DiscountType,
+  OrderDiscountType,
 } from "./types";
 import type { ComputedRef } from "vue";
 
@@ -108,7 +111,7 @@ function productToGtagItem(item: Product | VariationType, index?: number): Gtag.
   };
 }
 
-function lineItemToGtagItem(item: LineItemType | OrderLineItemType, index?: number): Gtag.Item {
+function lineItemToGtagItem(item: LineItemType | OrderLineItemType, index?: number): Gtag.Item & PromotionsType {
   const categories: Record<string, string> = getCategories(item.product?.breadcrumbs);
 
   return {
@@ -120,6 +123,12 @@ function lineItemToGtagItem(item: LineItemType | OrderLineItemType, index?: numb
     discount: item.discountAmount?.amount || item.discountTotal?.amount,
     price: "price" in item ? item.price.amount : item.listPrice.amount,
     quantity: item.quantity,
+    promotion_id: item.discounts?.[0]?.promotionId,
+    promotion_name: item.discounts?.[0]?.promotionName,
+    promotions: item.discounts?.map((promotion: DiscountType | OrderDiscountType) => ({
+      promotion_id: promotion.promotionId,
+      promotion_name: promotion.promotionName,
+    })),
     ...categories,
   };
 }
