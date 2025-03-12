@@ -1,5 +1,8 @@
 # Google Analytics Module For VirtoCommerce Frontend
 
+> [!WARNING]  
+The module is deprecated, we recommend to use https://github.com/VirtoCommerce/vc-frontend/tree/dev/client-app/modules/google-analytics instead
+
 This module is designed for use with the VirtoCommerce frontend app. It provides a simple interface to initialize and use Google Analytics, allowing you to track user interactions and events on your website.
 
 ## Installation
